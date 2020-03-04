@@ -1,4 +1,4 @@
-package com.petroit.phonebook.controller.domain;
+package com.petroit.phonebook.domain;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 

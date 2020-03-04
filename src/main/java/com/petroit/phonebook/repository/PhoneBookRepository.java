@@ -1,6 +1,6 @@
-package com.petroit.phonebook.controller.repository;
+package com.petroit.phonebook.repository;
 
-import com.petroit.phonebook.controller.domain.Phonebook;
+import com.petroit.phonebook.domain.Phonebook;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
