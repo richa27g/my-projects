@@ -6,5 +6,7 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface PhoneBookRepository extends MongoRepository<Phonebook, String> {
+public interface PhoneBookRepository extends MongoRepository<Phonebook, Long> {
+
+    Phonebook findByNumber(String number);
 }
