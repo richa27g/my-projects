@@ -1,17 +1,12 @@
 package com.petroit.phonebook.domain;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.format.annotation.NumberFormat;
-
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Document(
@@ -20,21 +15,16 @@ import javax.validation.constraints.Size;
 public class Phonebook {
 
     @Id
-/*    @NotNull
-    @Size(min=2, max=10)
-    @NumberFormat*/
     String number;
-
     String comments;
     String image;
-    List<String> documents  = new ArrayList<>();
+    List<String> documents = new ArrayList<>();
     Date createdOn;
     Date updatedOn;
 
-    public Phonebook()
-    {
-        this.createdOn=new Date();
-        this.updatedOn=new Date();
+    public Phonebook() {
+        this.createdOn = new Date();
+        this.updatedOn = new Date();
     }
 
     public String getNumber() {
