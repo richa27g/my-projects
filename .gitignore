@@ -1,0 +1,14 @@
+.idea
+y
+y.pub
+*/target/*
+*.log
+*.iml
+*.dir
+.settings
+.project
+.classpath
+/classes/
+*.ipr
+*.iws
+ content/src/main/content/jcr_root/etc/designs/invest-india/investindialibs/js/login.js
